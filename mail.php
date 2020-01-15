@@ -1,7 +1,7 @@
 <?php
 
 $nome = $_GET['name'];
-$to      = 'eu@betho.com.br';
+$to      = 'hgomescostajr@gmail.com';
 $subject = 'Confirmação do niver da Mel';
 $message = $nome. ' Confirmou a presenã';
 $headers = 'From: webmaster@example.com' . "\r\n" .
