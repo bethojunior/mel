@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <title>Mundo da Mel</title>
         <link rel="icon" type="image/png" sizes="16x16" href="icon.jpeg">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
         <style>
             *{
@@ -36,9 +37,18 @@
         </div>
         <div style="margin-top: 2vw;" class="row">
             <div class="col s12">
-                <input style="margin-right: 3vw;" class="col s8" placeholder="Seu nome">
-                <button class="btn col s4">Eu vou!</button> 
+                <input id="name" style="margin-right: 3vw;" class="col s8" placeholder="Seu nome">
+                <button onclick="go()" class="btn col s4">Eu vou!</button> 
             </div>
         </div>
+        <script>
+            function go(){
+                let name = document.getElementById('name').value;
+                if(name == '')
+                    return swal('ops..','Preciso que digite seu nome para que eu confirme sua prenseça','info');
+
+                swal('Ótimo, '+name,'Aguardo sua presença!','success');
+            }
+        </script>
     </body>
 </html>
