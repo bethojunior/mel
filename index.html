@@ -9,7 +9,7 @@
   crossorigin="anonymous"></script>
         <meta name="theme-color" content="#8B6485">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-        <title>Mundo da Mel</title>
+        <title>Mundo da Melzinha</title>
         <link rel="icon" type="image/png" sizes="16x16" href="icon.jpeg">
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
@@ -19,11 +19,11 @@
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-    
+
             gtag('config', 'UA-130886869-1');
         </script>
-    
-    
+
+
         <style>
             *{
                 font-family: 'Montserrat', sans-serif!important;
@@ -53,7 +53,7 @@
         <div style="margin-top: 2vw;" class="row">
             <div class="col s12">
                 <input id="name" style="margin-right: 3vw;" class="col s8" placeholder="Seu nome">
-                <button onclick="go()" class="btn col s4">Eu vou!</button> 
+                <button onclick="go()" class="btn col s4">Eu vou!</button>
             </div>
         </div>
         <script>
@@ -63,7 +63,7 @@
                     return swal('ops..','Preciso que digite seu nome para que eu confirme sua prenseça','info');
 
                 swal('Ótimo, '+name,'Aguardo sua presença!','success');
-                
+
                 $.ajax({
                     url: 'mail.php?name='+name,
                     method: 'GET',
